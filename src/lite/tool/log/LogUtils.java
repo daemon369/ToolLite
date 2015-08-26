@@ -10,15 +10,15 @@ public final class LogUtils {
     public static final Level DEFAULT_LOG_LEVEL = Level.WARN;
     private static Level logLevel = Level.DEBUG;
 
-    static void setLogger(final ILogger logger) {
+    public static void setLogger(final ILogger logger) {
         LogUtils.logger = logger;
     }
 
-    static void setLogLevel(final Level level) {
+    public static void setLogLevel(final Level level) {
         LogUtils.logLevel = level;
     }
 
-    static Level getLogLevel() {
+    public static Level getLogLevel() {
         if (null == LogUtils.logLevel) {
             return DEFAULT_LOG_LEVEL;
         }

@@ -2,7 +2,7 @@ package lite.tool.log;
 
 import lite.tool.log.ILogger.Level;
 
-final class LogUtils {
+public final class LogUtils {
     private static ILogger logger = null;
     private static DefaultLogger defaultLogger = null;
 
